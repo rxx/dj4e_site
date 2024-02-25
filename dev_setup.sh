@@ -1,8 +1,19 @@
 #!/usr/bin/env bash
+set -e
 
-mkvirtualenv django50 --python=/usr/bin/python3.10 && echo "workon django50" >> ~/.bashrc && pip install -r requirements.txt
+cd ~
+source virtualenvwrapper.sh &> /dev/null
+mkvirtualenv django50 --python=/usr/bin/python3.10
+echo "workon django50" >> ~/.bashrc
 
-cd ~ && git clone https://github.com/csev/dj4e-samples samples && cd ~/samples && pip install -r requirements42.txt
+cd dev
+pip install -r requirements.txt
 
-python manage.py check && python manage.py makemigrations && python manage.py migrate
+cd ~
+git clone https://github.com/csev/dj4e-samples samples && cd samples
+pip install -r requirements42.txt
+
+python manage.py check
+python manage.py makemigrations
+python manage.py migrate
     
