@@ -13,10 +13,10 @@ def install_django():
         
 def save_requirements():
     try:
-        result = subprocess.run(["pip", "freeze"], check=True, text=True, encoding="utf-8", stdout=subprocess.PIPE)
+        result = subprocess.run(["pip", "freeze"], check=True, stdout=subprocess.PIPE)
         
         with open("requirements.txt", "w") as file:
-            file.write(cmd.stdout)
+            file.write(result.stdout.decode())
                     
         print("Successfully created requirements.txt")
     except subprocess.CalledProcessError as e:
