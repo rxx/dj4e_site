@@ -3,47 +3,44 @@
    styling to the original index.htm / start.htm */
 
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* Here is one of many  CSS rules you will need... */
 
 div {
-    width: 25%;
-    border-width: 5px;
-    border-style: solid;
-    padding: 5px;
-    margin: 5px;
-    position: fixed;
+	width: 25%;
+	border-width: 5px;
+	border-style: solid;
+	padding: 5px;
+	margin: 5px;
+	position: fixed;
 }
 
 #one {
-    border-color: orange;
+	border-color: orange;
 }
-
 
 #two {
-    border-color: yellow;
-    top: 200px;
-    
+	border-color: yellow;
+	top: 200px;
 }
 
-#three{
-    border-color: green;
-    right: 0;
-    
+#three {
+	border-color: green;
+	right: 0;
 }
 
 #four {
-    border-color: blue;
-    right: 0;
-    top: 200px;
-    
+	border-color: blue;
+	right: 0;
+	top: 200px;
 }
 
 #link {
-    color: #eee;
-    vertical-align: top;
-    text-align: center;
-    font-family: 'Roboto', Corbel, Avenir, 'Lucida Grande', 'Lucida Sans', sans-serif;
+	color: #eee;
+	vertical-align: top;
+	text-align: center;
+	font-family: "Roboto", Corbel, Avenir, "Lucida Grande", "Lucida Sans",
+		sans-serif;
 }
